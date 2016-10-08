@@ -47,8 +47,8 @@ task main()
 	motor[port5] = 127; //Full power positive servo (open right claw) <-- Servo 2
 	motor[port6] = 127; //Full power positive servo (open left claw) <-- Servo 3
 	wait1Msec(1000); //Play for 1 second (or 1000 miliseconds)
-	motor[port5] = 0; //Then stop (stop power of right claw & leave it opened) <-- Servo
-	motor[port6] = 0; //Then stop (stop power of left claw & leave it opened) <-- Servo
+	motor[port5] = 0; //Then stop (stop power of right claw & leave it opened) <-- Servo 2
+	motor[port6] = 0; //Then stop (stop power of left claw & leave it opened) <-- Servo 3
 	} else if (vexRT[Btn6D] == 1) //DOWN Pressed (closing claw)
 	{
 	motor[port5] = -127; //Full power negative servo (close right claw) <-- Servo 2
