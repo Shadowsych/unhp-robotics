@@ -1,2 +1,6 @@
 ## Uplift North Hills Preperatory 2016 VEX RobotC Program
+
+## Introduction
 The team trying to do RobotC code like a b0ss. The 2016 year we decided to program with RobotC instead of EasyC because RobotC is our admission ticket to the k00l k1ds table. Also, EasyC just really sucks...
+
+## Documentation
