@@ -3,4 +3,4 @@ This is the RobotC program for the 2016 Uplift North Hills Preperatory VEX Robot
 
 ## Documentation
 Current problem(s):
-Motors Repeat -> Check in ROBOT: Go to Robot > VEX Cortex Communication Mode and make sure it's set to VEXnet or USB.
+- Motors Repeat -> Check in ROBOT: Go to Robot > VEX Cortex Communication Mode and make sure it's set to VEXnet or USB.
