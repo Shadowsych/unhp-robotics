@@ -33,6 +33,7 @@ task main()
 	motor[rotateClaw] = -127; //Full power opposite rotation
 	wait1Msec(2000); //Play for 2 seconds
 	motor[rotateClaw] = 0; //Then stop
+	}
 		
 	} 		
 }
