@@ -10,30 +10,54 @@ task main()
 	127 = Full power forward
 	-127 = Full power backwards
 	0 = Stationary
+	
 	Commands:
 	vexRT[] refers to the Vex Joystick's buttons/joysticks
-	#pragmas refer to the ports
+	#pragmas refer to the ports. Only motors have #pragmas, NOT servos!
+	
+	Booleans:
+	0 = STOP
+	1 = GO
+	
+	Motors & Servos Ports:
+	port1 = Unused
+	port2 = [Motor] Right Wheel
+	port3 = [Motor] Left Wheel
+	port4 = [Motor] Rotation of arm
+	port5 = [Servo] Right claw (opening & closing)
+	port6 = [Servo] Left claw (opening & closing)
+	port7 = [Servo] Up & Down of arm
 	*/
 	
-	//The while loop will play the program ALWAYS, this is continous to check the joystick's position, if a button is pressed, etc.
+	//Infinite loop to continiously update the values
 	while(1 == 1)
 	{ 
-		
-	motor[rightWheel] = vexRT[Ch2]; //The vexRT[Ch2] refers to Channel 2's joystick (127 = up, -127  down, 0 = stationary)
-	motor[leftWheel] = vexRT[Ch3]; //The vexRT[Ch3] refers to Channel 3's joystick (127 = up, -127 down, 0 = stationary)
-		
-	/* Channel 6 Buttons UP and DOWN*/
-	if (vexRT[Btn6U] == 1) //UP Pressed
+	
+	//MOTORS (we use motor[] codes)
+	motor[rotateClaw] = vexRT[Ch1]; //Channel 1 (right joystick, left & right) rotates claw <-- Motor 1
+	motor[rightWheel] = vexRT[Ch2]; //Channel 2 (right joystick, up & down) right wheel <-- Motor 2
+	motor[leftWheel] = vexRT[Ch3]; //Channel 3 (left joystick, up & down) left wheel <-- Motor 3
+	//We probably won't have a fourth motor because Kiran broke it :(. Ok, it probably wasn't kiran, but when in doubt blame kiran.
+	motor[port7] = vexRT[Ch4]; //Channel 4  (left joystick, left & right) claw up & down <-- Servo 1
+	
+	//SERVOS (we can use the motor[] codes for a servo, too!)
+	/* Channel 6 Buttons (RIGHT TOP SIDE) [Open and close claws] */
+	if (vexRT[Btn6U] == 1) //UP Pressed (opening claw)
 	{
-	motor[rotateClaw] = 127; //Full power rotation
-	wait1Msec(2000); //Play for 2 seconds
-	motor[rotateClaw] = 0; //Then stop
-	} else if (vexRT[Btn6D] == 1) //DOWN Pressed
+	motor[port5] = 127; //Full power positive servo (open right claw) <-- Servo 2
+	motor[port6] = 127; //Full power positive servo (open left claw) <-- Servo 3
+	wait1Msec(1000); //Play for 1 second (or 1000 miliseconds)
+	motor[port5] = 0; //Then stop (stop power of right claw & leave it opened) <-- Servo
+	motor[port6] = 0; //Then stop (stop power of left claw & leave it opened) <-- Servo
+	} else if (vexRT[Btn6D] == 1) //DOWN Pressed (closing claw)
 	{
-	motor[rotateClaw] = -127; //Full power opposite rotation
-	wait1Msec(2000); //Play for 2 seconds
-	motor[rotateClaw] = 0; //Then stop
+	motor[port5] = -127; //Full power negative servo (close right claw) <-- Servo 2
+	motor[port6] = -127; //Full power negative servo (close left claw) <-- Servo 3
+	wait1Msec(1000); //Play for 1 second (or 1000 miliseconds)
+	motor[port5] = 0; //Then stop (stop power of right claw & leave it closed) <-- Servo 2
+	motor[port6] = 0; //Then stop (stop power of left claw & leave it closed) <-- Servo 3
 	}
 		
-	} 		
-}
+	} //End while loop	
+	
+} //End main task
