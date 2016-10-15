@@ -14,7 +14,7 @@ How to Download & Compile the RobotC Program:
 - Turn the Vex Joystick on
 - Test the program!
 
-Motors continously spin on Joystick ports FIX:
+## Motors continously spin on Joystick ports FIX:
 We had this problem for about a week, but after thorough research we got the solution.
 The problem is with the VEX Joystick not being calibrated. Here are the steps:
 - Turn off and disconnect the VEX Microcontroller from the VEX Joystick
