@@ -26,4 +26,4 @@ The problem is with the VEX Joystick not being calibrated. Here are the steps:
 - Finished! Test your robot!
 
 You can also look at this guide if the steps were confusing: https://content.vexrobotics.com/docs/VEXnet_Joystick_Calibration_20140902.pdf
-- NOTE: We are using white vex net keys (a vex net key is the wireless USB) for best robotics.
+- NOTE: We are using 376-3245 VEXnet Key 2.0 (white) (a vex net key is the wireless USB) for BEST robotics. 
