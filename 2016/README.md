@@ -29,4 +29,4 @@ You can also look at this guide if the steps were confusing: https://content.vex
 - NOTE: We are using 376-3245 VEXnet Key 2.0 (white) (a vex net key is the wireless USB) for BEST robotics. 
 
 ## Reversing Motor Wheels
-We need to reverse the motor wheel movement because a left and right motor are positioned on opposites. Therefore, the movement would be inversed if we don't reverse one of the motors. We don't code a reverse program for the wheel motors. Instead, we reverse the Motor Controller 29 wiring to the Motor, which reverses the motor movement.
+We need to reverse the motors used for the robot's wheels because a left and right motor are positioned on opposites. Since the motors are on opposites, the robot movement would be inversed if we don't reverse one of the motors. We don't code a reverse program for the wheel motors. Instead, we reverse the Motor Controller 29 wiring to the Motor, which reverses the motor movement.
