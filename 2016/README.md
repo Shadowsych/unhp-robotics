@@ -1,9 +1,9 @@
 ## Uplift North Hills Preperatory 2016 VEX RobotC Program
 This is the RobotC program for the 2016 Uplift North Hills Preperatory VEX RobotC competition. All documentations & setup will be provided here for the future generation to study & understand. If you're having issues, please post them on the issue tab of this GitHub.
 
-## Documentation
+## [----Documentation----]
 
-How to Download & Compile the RobotC Program:
+## How to Download & Compile the RobotC Program:
 - Turn the Vex Microcontroller on
 - Click the "Robot" tab in RobotC, then go to VEX Cortex Communication Mode, and make sure it's set to "VEXnet or USB."
 - Using the orange cord in your returnable kit, connect the Vex Microcontroller to the computer
@@ -27,3 +27,6 @@ The problem is with the VEX Joystick not being calibrated. Here are the steps:
 
 You can also look at this guide if the steps were confusing: https://content.vexrobotics.com/docs/VEXnet_Joystick_Calibration_20140902.pdf
 - NOTE: We are using 376-3245 VEXnet Key 2.0 (white) (a vex net key is the wireless USB) for BEST robotics. 
+
+## Reversing Motor Wheels
+We need to reverse the motor wheel movement because a left and right motor are positioned on opposites. Therefore, the movement would be inversed if we don't reverse one of the motors. We don't code a reverse program for the wheel motors. Instead, we reverse the Motor Controller 29 wiring to the Motor, which reverses the motor movement.
