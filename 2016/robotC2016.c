@@ -50,8 +50,8 @@ task main()
 		motor[port6] = 45; //Position the servo right wise (close left claw) <-- Servo 3
 	}
 	/*
-	When opening the claw, we have one side going right (thumb) and one going left (inversed direction)
-	When closing the claw, we have one side going left (thumb) and one going right (inversed direction)
+	When opening the claw, we have one side going right and one going left (inversed direction)
+	When closing the claw, we have one side going left and one going right (inversed direction)
 	*/
 	} //End while loop
 
