@@ -34,14 +34,15 @@ task main()
 	while(1 == 1)
 	{
 	//MOTORS (we use motor[] codes)
-	motor[port2] = vexRT[Ch2]; //Channel 2 (right joystick, up & down) right wheel <-- Motor 1
-	motor[port3] = vexRT[Ch3]; //Channel 3 (left joystick, up & down) left wheel <-- Motor 2
+	//The vexRT[] is negative for logical tank mode (up goes forward, down goes backward)
+	motor[port2] = -(vexRT[Ch2]); //Channel 2 (right joystick, up & down) right wheel <-- Motor 1
+	motor[port3] = -(vexRT[Ch3]); //Channel 3 (left joystick, up & down) left wheel <-- Motor 2
 		
 	/* Channel 5 Buttons (Moving the arm up & down) */
-	if (vexRT[Btn5U] == 1) //UP pressed (going up)
+	if (vexRT[Btn5U] == 1 && vexRT[Btn5U] != 0) //UP hold (going up)
 	{
 		motor[port4] = 64; //Motor goes positive up with 64 power <-- Motor3
-	} else if (vexRT[Btn5D] == 1) //DOWN pressed (going down)
+	} else if (vexRT[Btn5D] == 1 && vexRT[Btn5D] != 0) //DOWN hold (going down)
 	{
 		motor[port4] = -64; //Motor goes negative down with 64 power <-- Motor 3
 	} else 
