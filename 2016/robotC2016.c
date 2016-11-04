@@ -42,13 +42,13 @@ task main()
 	/* Channel 5 Buttons (Moving the arm up & down) */
 	if (vexRT[Btn5U] == 1 && vexRT[Btn5U] != 0) //UP hold (going up)
 	{
-		motor[port4] = 84; //Motor goes positive up with 64 power <-- Motor3
+		motor[port4] = -84; //Motor goes up with 84 power <-- Motor3
 	} else if (vexRT[Btn5D] == 1 && vexRT[Btn5D] != 0) //DOWN hold (going down)
 	{
-		motor[port4] = -84; //Motor goes negative down with 64 power <-- Motor 3
+		motor[port4] = 84; //Motor goes down with 84 power <-- Motor 3
 	} else 
 	{
-		motor[port4] = 20; //If nothing pressed, make the motor go to power 20 (20 not 0 because weight of claws) <-- Motor 3	
+		motor[port4] = 0; //If nothing pressed, make the motor go to power 20 (20 not 0 because weight of claws) <-- Motor 3	
 	}
 		
 	if (vexRT[Btn8U] == 1  && vexRT[Btn8U] != 0) //Channel 8 UP (Water motor up)
@@ -57,6 +57,9 @@ task main()
 	} else if(vexRT[Btn8D] == 1 && vexRT[Btn8D] != 0) //Channel 8 DOWN (Water motor down)
 	{
 		motor[port5] = -64; //Motor goes positive up with 64 power <-- Motor4
+	} else 
+	{
+	motor[port5] = 0; //Turn the motor off	
 	}
 	
 	//SERVOS (we can use the motor[] codes for a servo, too! However, it uses angle positions rather than power level.)
