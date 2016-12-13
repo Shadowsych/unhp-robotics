@@ -16,7 +16,7 @@ This is the RobotC program for the 2016 Uplift North Hills Preperatory VEX Robot
 
 ## Calibration
 ALWAYS!!! calibrate your Robot the moment you receive the Returnable kit from the competition. 
-We had this problem for about a week, but after thorough research we got the solution.
+We had a problem with the motors spinning for a week, but after thorough research we got the solution.
 The problem is with the VEX Joystick not being calibrated. Here are the steps:
 - Turn off and disconnect the VEX Microcontroller from the VEX Joystick
 - Turn on the VEX Joystick
