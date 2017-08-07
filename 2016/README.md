@@ -1,9 +1,9 @@
 ## Uplift North Hills Preperatory 2016 VEX RobotC Program
-This is the RobotC program for the 2016 Uplift North Hills Preperatory VEX RobotC competition. All documentations & setup will be provided here for the future generation to study & understand. If you're having issues, please post them on the issue tab of this GitHub.
+This is the RobotC program for the 2016 Uplift North Hills Preperatory VEX RobotC competition. 
+- All documentations & setup will be provided here for anyone to study
+- If you're having an issue, please post your issue on this repository
 
-## [----Documentation----]
-
-## How to Download & Compile the RobotC Program:
+## How to Download and Compile the RobotC Program:
 - Turn the Vex Microcontroller on
 - Click the "Robot" tab in RobotC, then go to VEX Cortex Communication Mode, and make sure it's set to "VEXnet or USB."
 - Using the orange cord in your returnable kit, connect the Vex Microcontroller to the computer
@@ -12,22 +12,19 @@ This is the RobotC program for the 2016 Uplift North Hills Preperatory VEX Robot
 - While the Vex microcontroller is still connected to the computer, turn the microcontroller off, wait 10 seconds, then turn it back on, then disconnect the microcontroller from the computer
 - Now plug in the wireless USB drives to the Vex Joystick & Vex Microcontroller
 - Turn the Vex Joystick on
-- Test the program!
+- Finished, now test the program and see if it works
 
 ## Calibration
-ALWAYS!!! calibrate your Robot the moment you receive the Returnable kit from the competition. 
-We had a problem with the motors spinning for a week, but after thorough research we got the solution.
-The problem is with the VEX Joystick not being calibrated. Here are the steps:
+Always calibrate your joystick the moment you receive the Returnable kit.
+We forgot to calibrate when we received the kit, and our motors were spinning uncontrollably for a week.
+Here are the steps to calibrate your joystick:
 - Turn off and disconnect the VEX Microcontroller from the VEX Joystick
 - Turn on the VEX Joystick
 - Hold down the channel 6 UP Button
-- While holding the channel 6 UP BUtton, hold down the little config button in the middle of your VEX Joystick (you'll need a paperclip to click that small Config button)
+- While holding the channel 6 UP Button, hold down the little config button in the middle of your VEX Joystick (you'll need a paperclip to click that small Config button)
 - Once the lights start flashing, then release the channel 6 UP Button and Config Button
-- QUICK! YOU ONLY HAVE 10 SECONDS: Now move your left and right joystick sticks around to their maximum positions, and once the joystick light is fully green with no flashes, then hold the Channel 8 UP button for 5 seconds and let go
-- Finished! Test your robot!
+- You only have 10 seconds: Now move your left and right joystick sticks around to their maximum positions, and once the joystick light is fully green with no flashes, then hold the Channel 8 UP button for 5 seconds and let go
+- Finished, now test the robot and see if it works
 
 You can also look at this guide if the steps were confusing: https://content.vexrobotics.com/docs/VEXnet_Joystick_Calibration_20140902.pdf
-- NOTE: We are using 376-3245 VEXnet Key 2.0 (white) (a vex net key is the wireless USB) for BEST robotics. 
-
-## Reversing Motor Wheels
-We need to reverse the motors used for the robot's wheels because a left and right motor are positioned on opposites. Since the motors are on opposites, the robot movement would be inversed if we don't reverse one of the motors. We don't code a reverse program for the wheel motors. Instead, we reverse the Motor Controller 29 wiring to the Motor, which reverses the motor movement.
+- Note: We are using 376-3245 VEXnet Key 2.0 (white) [the vex net key is the wireless USB] for BEST robotics. 
