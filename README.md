@@ -9,4 +9,4 @@ to successfully program the robot (link below)
 
 ## Having Issues?
 Although I'll have graduated from North Hills by 2018, I'm still willing to answer questions (link below)
-- https://github.com/Shadowsych/unhp-robotics/issues Click "New Issue" and type in your question
+- https://github.com/Shadowsych/unhp-robotics/issues Click "New issue" and type in your question
