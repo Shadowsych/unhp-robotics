@@ -22,6 +22,8 @@ task main()
 	port4 = [Motor] Up & Down of arm
 	port5 = [Motor] Water motor
 	port6 = [Servo] Opening & Closing Claw
+	port 7 = Unused
+	port 8 = Unused
 	
 	Note: vexRT[] refers to the VEX Joystick's channels (there are up to 8 channels on the joystick).
 	*/
@@ -60,6 +62,6 @@ task main()
 		motor[port6] = -330; // Position Port 6 Servo to close the claw
 	}
 	
-  } // End while loop
+	} // End while loop
 
 } // End main task function
