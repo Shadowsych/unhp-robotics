@@ -4,5 +4,5 @@ This is the RobotC program for the 2016 Uplift North Hills Preparatory BEST Robo
 
 ## Programmer(s)
 - Pravat Bhusal (President of Software Engineering)
-- Abhishek Sheik (Programmer)
+- Abhishekh Bajracharya (Programmer)
 - Aman Ghimire (Programmer)
