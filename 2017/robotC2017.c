@@ -17,11 +17,11 @@ task main()
 
 	Motors & Servos Ports:
 	port1 = Unused
-	port2 = Unused
-	port3 = Unused
-	port4 = Unused
+	port2 = Right Wheel
+	port3 = Left Wheel
+	port4 = String Motor
 	port5 = Unused
-	port6 = Unused
+	port6 = Slab Servo
 	port 7 = Unused
 	port 8 = Unused
 	
