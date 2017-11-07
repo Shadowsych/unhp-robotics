@@ -31,7 +31,7 @@ task main()
 	// Infinite while loop to continiously run the robot
 	while(1 == 1) {
 		motor[port2] = -(vexRT[Ch2]); // Channel 2 (right-side joystick, up & down) for the right wheel
-		motor[port3] = (vexRT[Ch3]); // Channel 3 (left-side joystick, up & down) for the left wheel
+		motor[port3] = -(vexRT[Ch3]); // Channel 3 (left-side joystick, up & down) for the left wheel
 
 		// Channel 5 Buttons [Roll Forklift String to move Up and Down]
 		if (vexRT[Btn5U] == 1 && vexRT[Btn5U] != 0) {// Holding Channel 5 Up Button
